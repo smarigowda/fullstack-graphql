@@ -5,19 +5,26 @@
 
 module.exports = {
   Query: {
-    
-  },
-  Mutation: {
-    
-  },
-  Pet: {
-    img(pet) {
-      return pet.type === 'DOG'
-        ? 'https://placedog.net/300/300'
-        : 'http://placekitten.com/300/300'
+    pets: () => {
+      return [{
+        id: '1234',
+        createdAt: '10/11/21',
+        name: 'Milo',
+        type: 'dog'
+      }]
     }
   },
-  User: {
+  // Mutation: {
     
-  }
+  // },
+  // Pet: {
+  //   img(pet) {
+  //     return pet.type === 'DOG'
+  //       ? 'https://placedog.net/300/300'
+  //       : 'http://placekitten.com/300/300'
+  //   }
+  // },
+  // User: {
+    
+  // }
 }
