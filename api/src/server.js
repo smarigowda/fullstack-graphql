@@ -5,7 +5,10 @@ const {models, db} = require('./db')
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  context: () => {
+    return { models }
+  }
 })
 
 server.listen().then(({ url }) => {

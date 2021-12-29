@@ -5,15 +5,15 @@ const { gql } = require('apollo-server')
  */
 const typeDefs = gql`
     type User {
-        id: String
-        username: String
+        id: ID!
+        username: String!
     }
 
     type Pet {
-        id: String
-        createdAt: Int
-        name: String
-        type: String
+        id: ID!
+        createdAt: String!
+        name: String!
+        type: String!
     }
 
     type Query {
