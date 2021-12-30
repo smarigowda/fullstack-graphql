@@ -5,18 +5,12 @@
 
 module.exports = {
   Query: {
-    pets: (_, __, {models}) => {
-      // return [{
-      //   id: '1234',
-      //   createdAt: '10/11/21',
-      //   name: 'Milo',
-      //   type: 'dog'
-      // }]
-      return models.Pet.findMany()
-    }
+    pets: (_, { input }, { models }) => {
+      return models.Pet.findMany(input);
+    },
   },
   // Mutation: {
-    
+
   // },
   // Pet: {
   //   img(pet) {
@@ -26,6 +20,6 @@ module.exports = {
   //   }
   // },
   // User: {
-    
+
   // }
-}
+};
