@@ -12,9 +12,19 @@ module.exports = {
       return db.Pet.findOne(input);
     },
   },
-  // Mutation: {
+  Mutation: {
+    newPet: (_, { input }, { models: db }) => {
+      const newPet = {
+        id: "1236",
+        createdAt: "10/10/22",
+        name: input.name,
+        type: input.type,
+      };
 
-  // },
+      db.Pet.create(newPet);
+      return newPet;
+    },
+  },
   // Pet: {
   //   img(pet) {
   //     return pet.type === 'DOG'
