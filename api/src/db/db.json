@@ -8,25 +8,29 @@
       "id": "1234",
       "createdAt": "10/11/21",
       "name": "Milo",
-      "type": "dog"
+      "type": "dog",
+      "userId": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "1235",
       "createdAt": "10/10/21",
       "name": "Milo 2",
-      "type": "dog 2"
+      "type": "dog 2",
+      "userId": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "1236",
       "createdAt": "10/10/22",
       "name": "Daber",
-      "type": "dog"
+      "type": "dog",
+      "userId": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "1236",
       "createdAt": "10/10/22",
       "name": "new Dog",
-      "type": "Labradon"
+      "type": "Labradon",
+      "userId": "jBWMVGjm50l6LGwepDoty"
     }
   ]
 }
